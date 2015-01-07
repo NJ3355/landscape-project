@@ -1,3 +1,9 @@
+*, *:before, *:after { /* this saves lives, read this http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body {
 	background-color: #D0D0D0;
 }
@@ -13,6 +19,8 @@ body {
 	height: 25%;
 	margin-right: auto;
 	margin-left: auto;
+	
+	overflow:hidden; /* allows background green color to automatically encapsulate floated elements (aka your nav items), check out http://colinaarts.com/articles/the-magic-of-overflow-hidden/ */
 	
 }
 
@@ -59,54 +67,61 @@ body {
 *******************************/
 #slideshow {
 	margin-top: 10px;
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-	}
+	width:100%;
+	height:300px;
+	overflow:hidden; /* prevents huge images from showing outside our container */
+}
 	
 #slideshow img {
-
+	display:block; /* prevents gapping underneath images displayed inline or inline block, also allows margins */
+	height:100%; /* 100% height and width to fill up our #slideshow container */
 	width:100%;
-	height:40%;
-	
-	
-	}
+}
 
 /*******************************
 	Home page styles
 *******************************/
 #content {
+	/* don't set predefined dimensions on content, this container should always expand freely
 	height: 600px;
 	width:100%;
+	*/
+	min-height:600px; /* min-height will expand as needed*/
+	
 	background-image: url("bg.jpg") ;
 	background-repeat:no-repeat;
-}
-
-#content hr {
-
-	width: 100%;
 	
+	overflow:hidden; /* http://colinaarts.com/articles/the-magic-of-overflow-hidden/ */
 }
 
 #footer {
 	border-radius: 10px;
 	background-color: #009933;
+	
+	/* unfloated content automatically takes up 100% of the remaining width so no need to say width:100%
 	width: 100%;
 	height: 7%;
+	*/
+	
+	padding:1em;
+	
 	margin-right: auto;
 	margin-left: auto;
+	clear:both; /* clear any floats */
 }
 
 #sidebarleft {
+	width:400px;
 	
-	width: 25%;
+	padding:25px 75px;
+	position:relative; /* in this case position isn't really needed, im just including it to demonstrate that it can be used to reset the coordinate system for position:absolute. i correctly absolutely position the "get a quote button" thanks to this */
+	padding-bottom:150px; /* i need to include this to give space for the "get a quote" button im absolutely positioning, absolutely positioned elements take up no space. normally i wouldn't use position:absolute for the button but i am here for info */
 	
-	margin-left: 75px;
-	position: absolute;
+	float:left; /* float it left so our content (unfloated) takes up the remaining space to the right */
 }
 
 #sidebarleft h2 {
-	margin-left: 85px;
+	text-align:center;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -115,21 +130,13 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-
-#divider  hr{
-	position: absolute;
-	border-style: dotted;
-	margin-left: 450px;
-	 width:.25em;
-	 height: 36em; 
-	 
-}
-
 #sidebarright {
-	float: right;
-	
-	width: 65%;
-	
+	/* if you don't float the adjacent div the remainder of the space will be used, hence no width or float being defined here */
+	overflow:hidden; /* need to set this so our .third gets properly split into thirds and our "top services" title is properly centered on the images */
+	padding:25px 75px 25px 25px; /* im leaving off the left side's padding by 50px because my .third class will be adding the space itself */
+
+	border-left:1px dotted gray;
+	min-height:100%; /* ensures our border spans the entire side even if content isnt tall enough to cover all of #sidebarleft */
 }
 
 #sidebarright h2 {
@@ -141,13 +148,36 @@ body {
 	float: right;
 }
 
-#sidebarright img {
-	height:150px;
-	width:200px;
-	border: solid;
+#sidebarright .image-container img {
+	height:100%;
+	min-width:100%;
 	
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
 }
 
+#sidebarright .image-container { /* this is some ninja css from http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/ */
+	overflow:hidden;
+	border:3px solid white;
+	position:relative;
+	width:100%;
+	padding-bottom:80%; /* this is part of the ninja css */
+}
+
+#sidebarright .third {
+	width:33.3%;
+	position:relative; /* again using this to reset our coordinate system for absolute placement of stuff inside this element */
+	float:left;
+	padding-left:50px;
+}
+
+#sidebarright .third h3 {
+	text-align:center;
+}
+
+/*
 #sprinkler {
 	
 	height: 300px;
@@ -184,15 +214,25 @@ body {
 #lawncare h3 {
 	text-align: center;
 }
+*/
 
 #bottomleft {
 	position: absolute;
+	bottom:0; /* this forces our button to the bottom and sides of our #sidebarleft container, i used margin to pull back the button from the walls of the sidebar a bit */
+	left:0;
+	right:0;
+	margin:50px 60px; /* position:absolute won't respect #sidebarleft's 75px padding so i gave our button a 60px buffer (75px didnt look right to me)- it would also work to set bottom:60px instead, just wanted to illustrate this for ebijucational purposes */
+	
 	border-radius: 10px;
 	background-color: #009933;
+	/*
 	margin-left: 120px;
 	margin-top:400px;
 	width:200px;
 	height:75px;
+	*/
+	
+	padding:0.2em 2em; /* this allows for our inner text to grow the button without expanding beyond it (will never happen in this page's case but just nice to keep in mind) */
 }
 
 #bottomleft h2 {
@@ -201,10 +241,14 @@ body {
 	}
 
 #bottomright {
-	
+	/*
 	width:25px;
 	height:25px;
 	margin-left: 800px;
+	*/
+	clear:both; /* clear our #sidebarleft float so the box doesnt fit inside the remaining space not taken up by #sidebaright */
+	padding:50px 0;
+	float:right;
 }
 
 /****************************
@@ -362,19 +406,22 @@ body {
 ****************************/
 
 a {
-	margin-left: 50px;
 	text-decoration: none;
  	color: white;
+}
+
+/* noooooo you shouldn't set such a general selector for such a common tag- what if i wanted a to not take up any space?
+a {
+	margin-left: 50px; margin wouldnt work on this since it's an inline element, you'd need to display:block or display:inline-block to make it box-like
 }
 
 a:link {
  height: 100px;
  width: 100px;
-
 }
- 
+*/
+
 a:hover { 
     font-weight: bold;
 }
- 
-}
+
