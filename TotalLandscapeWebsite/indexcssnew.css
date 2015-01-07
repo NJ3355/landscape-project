@@ -1,0 +1,380 @@
+body {
+	background-color: #D0D0D0;
+}
+
+/*******************************
+	Header/Navbar
+*******************************/
+
+#header {
+	background-color: #009933;
+	border-radius: 10px;
+	width: 100%;
+	height: 25%;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+
+#logo {
+		border-radius: 10px;
+		width: 25%;
+	}
+
+#navlinks ul {
+
+	float:right;
+}
+
+#navlinks li {
+	
+	margin-top: -10px;
+	list-style-type: none;
+	padding-right: 150px;
+	padding-top: 40px;
+	font-family: arial;
+	float:left;
+	color: white;
+	}
+#navlinks li img {
+	height: 30px;
+}
+
+#phone{
+	background-color: black;
+	position:relative;
+}
+
+#phone h3{
+	color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	margin-right: 70px;
+	float:right;
+
+}
+
+/*******************************
+	Slideshow 
+*******************************/
+#slideshow {
+	margin-top: 10px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	}
+	
+#slideshow img {
+
+	width:100%;
+	height:40%;
+	
+	
+	}
+
+/*******************************
+	Home page styles
+*******************************/
+#content {
+	height: 600px;
+	width:100%;
+	background-image: url("bg.jpg") ;
+	background-repeat:no-repeat;
+}
+
+#content hr {
+
+	width: 100%;
+	
+}
+
+#footer {
+	border-radius: 10px;
+	background-color: #009933;
+	width: 100%;
+	height: 7%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#sidebarleft {
+	
+	width: 25%;
+	
+	margin-left: 75px;
+	position: absolute;
+}
+
+#sidebarleft h2 {
+	margin-left: 85px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#sidebarleft p {
+	
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#divider  hr{
+	position: absolute;
+	border-style: dotted;
+	margin-left: 450px;
+	 width:.25em;
+	 height: 36em; 
+	 
+}
+
+#sidebarright {
+	float: right;
+	
+	width: 65%;
+	
+}
+
+#sidebarright h2 {
+
+	text-align: center;
+}
+
+#sidebar h3{
+	float: right;
+}
+
+#sidebarright img {
+	height:150px;
+	width:200px;
+	border: solid;
+	
+}
+
+#sprinkler {
+	
+	height: 300px;
+	width: 275px;
+}
+#sprinkler h3 {
+
+	text-align: center;
+
+}
+
+#planting h3{
+	text-align: center;
+}
+
+#planting {
+	
+	
+	height:300px;
+	width: 275px;
+	margin-left: 300px;
+	margin-top:-320px;
+	
+	
+}
+
+#lawncare {
+	margin-top: -320px;
+	height: 300px;
+	width: 275px;
+	float: right;
+}
+
+#lawncare h3 {
+	text-align: center;
+}
+
+#bottomleft {
+	position: absolute;
+	border-radius: 10px;
+	background-color: #009933;
+	margin-left: 120px;
+	margin-top:400px;
+	width:200px;
+	height:75px;
+}
+
+#bottomleft h2 {
+	text-align: center;
+
+	}
+
+#bottomright {
+	
+	width:25px;
+	height:25px;
+	margin-left: 800px;
+}
+
+/****************************
+	Testimonials Page
+****************************/
+#reviews {
+	margin-top: -20px;
+	
+	
+	background-image: url("bg.jpg") ;
+	background-repeat:no-repeat;
+}
+
+#reviews h2, p {
+	text-align: center;
+	font-family: "arial";
+}
+
+#reviews hr {
+	width: 50%;
+}
+
+/****************************
+	Contact Page
+****************************/
+#sidebarinfo {
+	width: 35%;
+	padding-top: 15px;
+	padding-left: 170px;
+	position: absolute;
+}
+
+#sidebarform {
+	padding-top: 15px;
+	margin-left: 51%;
+	width:35%;
+	height: 31%;
+	position: absolute;
+}
+
+#contentcontact {
+	
+	width:100%;
+	background-image: url("bg.jpg") ;
+	background-repeat:no-repeat;
+}
+
+#googleMap {
+	width: 100%;
+	height: 250px;
+}
+
+
+/****************************
+	Services
+****************************/
+
+#jobscontent {
+	width:100%;
+	
+	background-image: url("bg.jpg") ;
+	background-repeat:no-repeat;
+
+}
+
+#jobscontent h2 {
+	font-family: arial;
+	text-align: center;
+	color:green;
+}
+
+#bottomnav {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	
+	height:4%;
+	width:100%;
+	
+}
+
+
+#bottomnav ul {
+	width:60%;
+	margin: 0 auto;
+	text-align: center;
+	display: inline;
+	
+}
+
+#bottomnav li {
+	
+	margin-right: 22px;
+	display: inline;
+	list-style-type: none;
+}
+
+#bottomnav a {
+	color: black;
+}
+
+#sidebarJobsLeft {
+	width: 39%;
+	padding-top: 15px;
+	padding-left: 120px;
+	position: absolute;
+	font-family: arial;
+
+}
+
+#sidebarJobsRight img {
+	position: absolute;
+	padding-top: 15px;
+	padding-left: 51%;
+	width:35%;
+	height: 31%;
+
+
+}
+
+/****************************
+	Footer
+****************************/
+
+#footer {
+
+}
+
+#footer p {
+	
+	padding-top: 15px;
+	text-align: center;
+	font-family: arial;
+	
+}
+
+
+
+#social {
+	
+	position: absolute;
+	margin-top: 5px;
+	margin-left:420px;
+	
+	
+}
+
+#social img {
+	float: left;
+
+}
+
+/****************************
+	Links
+****************************/
+
+a {
+	margin-left: 50px;
+	text-decoration: none;
+ 	color: white;
+}
+
+a:link {
+ height: 100px;
+ width: 100px;
+
+}
+ 
+a:hover { 
+    font-weight: bold;
+}
+ 
+}
