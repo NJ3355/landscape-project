@@ -107,19 +107,7 @@ body {
 }
 
 #footer {
-	border-radius: 10px;
-	background-color: #009933;
 	
-	/* unfloated content automatically takes up 100% of the remaining width so no need to say width:100%
-	width: 100%;
-	height: 7%;
-	*/
-	
-	padding:1em;
-	
-	margin-right: auto;
-	margin-left: auto;
-	clear:both; /* clear any floats */
 }
 
 #sidebarleft {
@@ -267,7 +255,7 @@ body {
 	Testimonials Page
 ****************************/
 #reviews {
-	margin-top: -20px;
+	margin-top: -10px;
 	
 	
 	background-image: url("bg.jpg") ;
@@ -294,7 +282,7 @@ body {
 }
 
 #sidebarform {
-	padding-top: 15px;
+	padding-top: 23px;
 	margin-left: 51%;
 	width:35%;
 	height: 31%;
@@ -306,11 +294,13 @@ body {
 	width:100%;
 	background-image: url("bg.jpg") ;
 	background-repeat:no-repeat;
+	overflow: hidden;
 }
 
 #googleMap {
 	width: 100%;
 	height: 250px;
+	margin-top: 10px;
 }
 
 
@@ -320,10 +310,9 @@ body {
 
 #jobscontent {
 	width:100%;
-	
 	background-image: url("bg.jpg") ;
 	background-repeat:no-repeat;
-
+	overflow: hidden;
 }
 
 #jobscontent h2 {
@@ -373,8 +362,8 @@ body {
 
 #sidebarJobsRight img {
 	position: absolute;
-	padding-top: 15px;
-	padding-left: 51%;
+	margin-left: 54%;
+	margin-top: 30px;
 	width:35%;
 	height: 31%;
 
@@ -387,6 +376,19 @@ body {
 
 #footer {
 	margin-top: 10px;
+	border-radius: 10px;
+	background-color: #009933;
+	
+	/* unfloated content automatically takes up 100% of the remaining width so no need to say width:100%
+	width: 100%;
+	height: 7%;
+	*/
+	
+	padding:1em;
+	
+	margin-right: auto;
+	margin-left: auto;
+	clear:both; /* clear any floats */
 }
 
 #footer p {
