@@ -30,21 +30,33 @@ body {
 		width: 25%;
 	}
 
-#navlinks ul {
+#navlinks {
+	
+	width: 100%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
 
-	float:right;
+#navlinks ul {
+	padding: 0;
+	display: inline;
 }
 
 #navlinks li {
 	
+	display: inline;
 	margin-top: -10px;
 	list-style-type: none;
-	padding-right: 150px;
+	padding: 0 75px;
 	padding-top: 40px;
 	font-family: arial;
-	float:left;
+	
 	color: white;
-	}
+}
+
 #navlinks li img {
 	height: 30px;
 }
