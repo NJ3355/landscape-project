@@ -353,7 +353,7 @@ body {
 
 #sidebarJobsLeft {
 	width: 39%;
-	padding-top: 15px;
+	
 	padding-left: 120px;
 	position: absolute;
 	font-family: arial;
@@ -363,9 +363,9 @@ body {
 #sidebarJobsRight img {
 	position: absolute;
 	margin-left: 54%;
-	margin-top: 30px;
+	margin-top: 12px;
 	width:35%;
-	height: 31%;
+	height: 28%;
 
 
 }
