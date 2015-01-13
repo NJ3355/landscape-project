@@ -6,6 +6,7 @@
 
 body {
 	background-color: #D0D0D0;
+
 }
 
 /*******************************
@@ -14,7 +15,7 @@ body {
 
 #header {
 	background-color: #009933;
-	border-radius: 10px;
+	border-radius: 10px 10px 0px 0px;
 	width: 100%;
 	height: 25%;
 	margin-right: auto;
@@ -74,11 +75,10 @@ body {
 }
 
 /*******************************
-	Slideshow 
+	Header Image
 *******************************/
 #slideshow {
-	margin-bottom: 10px;
-	margin-top: 10px;
+	
 	width:100%;
 	height:300px;
 	overflow:hidden; /* prevents huge images from showing outside our container */
@@ -107,19 +107,7 @@ body {
 }
 
 #footer {
-	border-radius: 10px;
-	background-color: #009933;
 	
-	/* unfloated content automatically takes up 100% of the remaining width so no need to say width:100%
-	width: 100%;
-	height: 7%;
-	*/
-	
-	padding:1em;
-	
-	margin-right: auto;
-	margin-left: auto;
-	clear:both; /* clear any floats */
 }
 
 #sidebarleft {
@@ -151,8 +139,8 @@ body {
 	min-height:100%; /* ensures our border spans the entire side even if content isnt tall enough to cover all of #sidebarleft */
 }
 
-#sidebarright h2 {
-
+#sidebarright h1 {
+	color:green;
 	text-align: center;
 }
 
@@ -189,6 +177,13 @@ body {
 	text-align:center;
 }
 
+
+#whyUs  {
+	padding-top: 1px;
+	
+	clear: both;
+
+}
 /*
 #sprinkler {
 	
@@ -263,15 +258,28 @@ body {
 	float:right;
 }
 
+#bottomright img {
+	margin-right: 10px;
+
+}
+
+#bottomright p {
+	color: black;
+}
+
+#bottomright a {
+	text-decoration: underline;
+	color: black;
+}
+
 /****************************
 	Testimonials Page
 ****************************/
 #reviews {
-	margin-top: -20px;
-	
-	
+	width:100%;
 	background-image: url("bg.jpg") ;
 	background-repeat:no-repeat;
+	overflow: hidden;
 }
 
 #reviews h2, p {
@@ -294,7 +302,7 @@ body {
 }
 
 #sidebarform {
-	padding-top: 15px;
+	padding-top: 23px;
 	margin-left: 51%;
 	width:35%;
 	height: 31%;
@@ -306,11 +314,13 @@ body {
 	width:100%;
 	background-image: url("bg.jpg") ;
 	background-repeat:no-repeat;
+	overflow: hidden;
 }
 
 #googleMap {
 	width: 100%;
 	height: 250px;
+	border-style: solid;
 }
 
 
@@ -320,10 +330,9 @@ body {
 
 #jobscontent {
 	width:100%;
-	
 	background-image: url("bg.jpg") ;
 	background-repeat:no-repeat;
-
+	overflow: hidden;
 }
 
 #jobscontent h2 {
@@ -347,7 +356,7 @@ body {
 	width:60%;
 	margin: 0 auto;
 	text-align: center;
-	display: inline;
+	clear:both;
 	
 }
 
@@ -362,23 +371,18 @@ body {
 	color: black;
 }
 
-#sidebarJobsLeft {
-	width: 39%;
-	padding-top: 15px;
-	padding-left: 120px;
-	position: absolute;
-	font-family: arial;
+#sidebarJobsRight {
+    width: 50%;
+    float:left;
+}
 
+#sidebarJobsLeft {
+	width:50%;
+	float:left;
 }
 
 #sidebarJobsRight img {
-	position: absolute;
-	padding-top: 15px;
-	padding-left: 51%;
-	width:35%;
-	height: 31%;
-
-
+	width:100%;
 }
 
 /****************************
@@ -386,7 +390,19 @@ body {
 ****************************/
 
 #footer {
-	margin-top: 10px;
+	
+	border-radius: 0px 0px 10px 10px;
+	background-color: #009933;
+	
+	/* unfloated content automatically takes up 100% of the remaining width so no need to say width:100%
+	width: 100%;
+	height: 7%;
+	*/
+	
+	padding:1em;
+	
+	
+	clear:both; /* clear any floats */
 }
 
 #footer p {
