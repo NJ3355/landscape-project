@@ -116,7 +116,7 @@ body {
 	padding:25px 75px;
 	position:relative; /* in this case position isn't really needed, im just including it to demonstrate that it can be used to reset the coordinate system for position:absolute. i correctly absolutely position the "get a quote button" thanks to this */
 	padding-bottom:150px; /* i need to include this to give space for the "get a quote" button im absolutely positioning, absolutely positioned elements take up no space. normally i wouldn't use position:absolute for the button but i am here for info */
-	
+	overflow: hidden;
 	float:left; /* float it left so our content (unfloated) takes up the remaining space to the right */
 }
 
@@ -224,12 +224,12 @@ body {
 */
 
 #bottomleft {
-	position: absolute;
+	
 	bottom:0; /* this forces our button to the bottom and sides of our #sidebarleft container, i used margin to pull back the button from the walls of the sidebar a bit */
 	left:0;
 	right:0;
-	margin:50px 60px; /* position:absolute won't respect #sidebarleft's 75px padding so i gave our button a 60px buffer (75px didnt look right to me)- it would also work to set bottom:60px instead, just wanted to illustrate this for ebijucational purposes */
-	
+	margin: 0 auto; /* position:absolute won't respect #sidebarleft's 75px padding so i gave our button a 60px buffer (75px didnt look right to me)- it would also work to set bottom:60px instead, just wanted to illustrate this for ebijucational purposes */
+	width: 100%;
 	border-radius: 10px;
 	background-color: #009933;
 	/*
@@ -246,6 +246,15 @@ body {
 	text-align: center;
 
 	}
+
+#datePicker {
+	font-size: 14px;
+	margin-top: 9em;
+}
+
+#ui-widget-content{
+	color:green;
+}
 
 #bottomright {
 	/*
