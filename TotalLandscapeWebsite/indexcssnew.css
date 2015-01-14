@@ -354,7 +354,7 @@ body {
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
-	
+	clear:both;
 	height:4%;
 	width:100%;
 	
@@ -366,6 +366,7 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	display: inline;
+
 	
 }
 
@@ -381,20 +382,24 @@ body {
 }
 
 #sidebarJobsLeft {
-	width: 39%;
-	
-	padding-left: 120px;
-	position: absolute;
+	height: 225px;
+	 width: 50%;
+   float: left;
 	font-family: arial;
+	border-right-style: solid;
 
 }
 
+#sidebarJobsRight {
+	 width: 50%;
+   float:left;
+}
+
 #sidebarJobsRight img {
-	position: absolute;
-	margin-left: 54%;
-	margin-top: 12px;
-	width:35%;
-	height: 28%;
+	   width:400px;
+	   height:225px;
+	   display:block;
+	   margin: auto;
 
 
 }
