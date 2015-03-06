@@ -1,0 +1,123 @@
+<html>
+<head>
+	<title></title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> 
+
+
+<style>
+.slider {
+  overflow:hidden;
+  background-color: blue;
+  width:500px;
+  position:relative;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.sliderImage {
+  background-color:yellow;
+  height:250px;
+}
+
+.slider .next.button {
+  right:0;
+
+}
+
+.slider .button {
+  position:absolute;
+  padding:0.1em 1em;
+  border:1px solid gray;
+  top:40%;
+  cursor:pointer;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+ 
+}
+
+.slider .sliderImage img {
+       max-width:100%;
+}
+
+.slider .previous.button {
+  left:0;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+var slider = function(target, slides) {
+  var currentSlide =0;
+
+  
+  
+  
+  
+  var updateImage = function() {
+     var img = $('<img>').attr('src', slides[currentSlide]);
+				target.find('.sliderImage').empty().append(img);
+  }
+
+   updateImage();
+	
+  
+  target.find('.next').click(function() {
+   currentSlide++;
+    if(currentSlide >= slides.length)
+      {
+        currentSlide = 0;
+      }
+  
+   updateImage();
+  
+  });
+  
+  target.find('.previous').click(function() {
+  --currentSlide;
+    if(currentSlide < 0) {
+    currentSlide = slides.length - 1;
+  }
+      
+  updateImage();
+    
+  });
+};
+
+var mySlides = new Array();
+mySlides[0] = "landheader.jpg";
+mySlides[1] = "landheader2.jpg";
+mySlides[2] = "landheader3.jpg";
+
+
+
+
+$(function() {
+  new slider($('.slider'), mySlides);
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div class="slider">
+   <div class="sliderImage">
+  </div>
+  <div class="next button">
+    <span class="fa fa-chevron-right"></span>
+  </div>
+  <div class="previous button">
+    <p>Previous</p>
+  </div>
+  
+</div>
+
+
+</body>
+
+
+</html>
