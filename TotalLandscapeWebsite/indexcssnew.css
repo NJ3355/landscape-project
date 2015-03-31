@@ -316,18 +316,22 @@ body {
 	Contact Page
 ****************************/
 #sidebarinfo {
-	width: 35%;
-	padding-top: 15px;
-	padding-left: 170px;
-	position: absolute;
+	width: 50%;
+	float:left;
+	text-align: center;
+	margin-top:30px;
+	
 }
 
 #sidebarform {
-	padding-top: 23px;
-	margin-left: 51%;
-	width:35%;
-	height: 31%;
-	position: absolute;
+	float: right;
+	width:50%;
+	border-left: 5px solid;	
+	text-align: center;
+}
+
+#infoFormWrapper {
+	
 }
 
 #contentcontact {
@@ -409,7 +413,22 @@ body {
 
 #sidenavbar{
 	float: left;
-	margin-right: 56px;
+	
+	
+}
+
+#sidenavbar ul {
+	padding: 0;
+	margin:0;
+	background-color: #d3ffce;
+	width: 220px;
+}
+
+#sidenavbar li {
+	text-align: center;
+	border-style: solid;
+	list-style-type: none;
+	padding: 5px 5px 5px 5px;
 }
 
 #bottomnav {
@@ -443,9 +462,13 @@ body {
 	color: black;
 }
 
+#jobWrapper {
+	overflow: hidden;
+}
+
 #sidebarJobsLeft {
 	height: 225px;
-	 width: 39%;
+	 width: 50%;
    float: left;
 	font-family: arial;
 	border-right-style: solid;
@@ -461,7 +484,7 @@ body {
 }
 
 #sidebarJobsRight {
-	 width: 37%;
+	 width: 50%;
    float:left;
 }
 
@@ -479,7 +502,7 @@ body {
 ****************************/
 
 #footer {
-	
+	margin-top: 
 	border-radius: 0px 0px 10px 10px;
 	background-color: #009933;
 	
@@ -531,24 +554,25 @@ body {
 
 
 
-
-a {
+ a{
 	text-decoration: none;
  	color: white;
 }
 
-/* noooooo you shouldn't set such a general selector for such a common tag- what if i wanted a to not take up any space?
-a {
-	margin-left: 50px; margin wouldnt work on this since it's an inline element, you'd need to display:block or display:inline-block to make it box-like
-}
 
-a:link {
- height: 100px;
- width: 100px;
-}
-*/
+
 
 a:hover { 
     font-weight: bold;
 }
 
+
+#sidenavbar a {
+	text-decoration: none;
+	font-family: arial;
+	color:black;
+}
+
+#sidenavbar a:hover { 
+    font-weight: bold;
+}
