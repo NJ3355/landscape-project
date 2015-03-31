@@ -409,7 +409,21 @@ body {
 
 #sidenavbar{
 	float: left;
-	margin-right: 56px;
+	
+	
+}
+
+#sidenavbar ul {
+	padding: 0;
+	margin:0;
+	background-color: #d3ffce;
+}
+
+#sidenavbar li {
+	text-align: center;
+	border-style: solid;
+	list-style-type: none;
+	padding: 5px 5px 5px 5px;
 }
 
 #bottomnav {
@@ -443,9 +457,13 @@ body {
 	color: black;
 }
 
+#jobWrapper {
+	overflow: hidden;
+}
+
 #sidebarJobsLeft {
 	height: 225px;
-	 width: 39%;
+	 width: 50%;
    float: left;
 	font-family: arial;
 	border-right-style: solid;
@@ -461,7 +479,7 @@ body {
 }
 
 #sidebarJobsRight {
-	 width: 37%;
+	 width: 50%;
    float:left;
 }
 
@@ -479,7 +497,7 @@ body {
 ****************************/
 
 #footer {
-	
+	margin-top: 
 	border-radius: 0px 0px 10px 10px;
 	background-color: #009933;
 	
