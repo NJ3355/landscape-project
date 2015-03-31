@@ -31,7 +31,18 @@ body {
 		width: 25%;
 	}
 
-#navlinks {	
+.sub-menu {
+	position: absolute;
+	right: 534px;
+	list-style-type: none;
+	
+}
+
+.sub-menu li {
+	list-style-type: none;
+}
+
+#navlinks  {	
 	width: 100%;
 	text-align: center;
 	margin-right: auto;
@@ -40,12 +51,12 @@ body {
 	padding-bottom: 20px;
 }
 
-#navlinks ul {
+#navlinks   {
 	padding: 0;
 	display: inline;
 }
 
-#navlinks li {
+#navlinks  li {
 	
 	display: inline;
 	margin-top: -10px;
@@ -274,6 +285,7 @@ body {
 
 #bottomright p {
 	color: black;
+	font-weight: bold;
 }
 
 #bottomright a {
@@ -395,6 +407,11 @@ body {
 	color:green;
 }
 
+#sidenavbar{
+	float: left;
+	margin-right: 56px;
+}
+
 #bottomnav {
 	text-align: center;
 	margin-right: auto;
@@ -428,7 +445,7 @@ body {
 
 #sidebarJobsLeft {
 	height: 225px;
-	 width: 50%;
+	 width: 39%;
    float: left;
 	font-family: arial;
 	border-right-style: solid;
@@ -444,7 +461,7 @@ body {
 }
 
 #sidebarJobsRight {
-	 width: 50%;
+	 width: 37%;
    float:left;
 }
 
@@ -507,6 +524,13 @@ body {
 /****************************
 	Links
 ****************************/
+
+/* drop down menu css*/
+
+
+
+
+
 
 a {
 	text-decoration: none;
