@@ -407,6 +407,11 @@ body {
 	color:green;
 }
 
+#sidenavbar{
+	float: left;
+	margin-right: 56px;
+}
+
 #bottomnav {
 	text-align: center;
 	margin-right: auto;
@@ -440,7 +445,7 @@ body {
 
 #sidebarJobsLeft {
 	height: 225px;
-	 width: 50%;
+	 width: 39%;
    float: left;
 	font-family: arial;
 	border-right-style: solid;
@@ -456,7 +461,7 @@ body {
 }
 
 #sidebarJobsRight {
-	 width: 50%;
+	 width: 37%;
    float:left;
 }
 
