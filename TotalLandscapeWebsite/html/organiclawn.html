@@ -1,40 +1,7 @@
 <!doctype html> <!-- remember to define doctype so the page renders more consistently -->
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="indexcssnew.css"/>
-		 <link rel="stylesheet" type="text/css" href="font-awesome-4.3.0/css/font-awesome.min.css">
-		 <script type="text/javascript" src="slideshowfile.js"></script>
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		 <script type="text/javascript" src="slider.js"></script>
-		 
-		 
-		<title>
-			Total Landscape
-		</title>
-	</head>
-	<body>
-		<div id = "header">
-			<div id ="phone">
-				<h3>Call us now! 555-555-5555</h3>
-			</div>
-			<div id="navbar">
-				<div id="logo">
-					<img src="logo.jpg">
-				</div>
-					<!-- means nothing at all-->
-				<div id="navlinks">
-					<ul>
-						<li><a href="indexnew.html"><img src="leaf2.png">Home</a></li>
-						<li><a href="testimonials.html"><img src="leaf2.png">Testimonials</a></li>
-						<li><a href="jobs.html"><img src="leaf2.png">Services</a></li>
-						<li><a href="contact.html"><img src="leaf2.png">Contact Us</a></li>
-					</ul>
-				</div>
-			</div>	
-		</div>
-		<div id="slideshow">
-			<img name="slide" src="landheader.jpg">
-		</div>
+		<?php include "header.php"; ?>
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.3.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="slider.js"></script>
 
 
 		<div id="jobscontent">
@@ -97,15 +64,5 @@
 
 		</div>
 		
-		<div id ="footer">
-			<div id="social">
-				<a href="http://www.facebook.com"><img src="facebook.gif"></a>
-				<a href="http://www.twitter.com"><img src="twitter.gif"></a>
-			</div>
-		<p>555-555-5555 | Totallandscape@yahoo.com</p>
+		<?php include "footer.php"; ?>
 		
-		</div>
-
-
-	</body>
-</html>

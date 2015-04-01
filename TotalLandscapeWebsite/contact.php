@@ -1,32 +1,71 @@
-<?php
-$field_name = $_POST['cf_name'];
-$field_email = $_POST['cf_email'];
-$field_message = $_POST['cf_message'];
+<!doctype html> <!-- remember to define doctype so the page renders more consistently -->
+		<?php include "header.php"; ?>
+		 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+		 
+		
 
-$mail_to = 'njohn33555@gmail.com';
-$subject = 'Message from a site visitor '.$field_name;
 
-$body_message = 'From: '.$field_name."\n";
-$body_message .= 'E-mail: '.$field_email."\n";
-$body_message .= 'Message: '.$field_message;
+		<div id="contentcontact">
+		
+		<div id="infoFormWrapper">
+		<div id="sidebarinfo">
 
-$headers = 'From: '.$field_email."\r\n";
-$headers .= 'Reply-To: '.$field_email."\r\n";
+			<p>Total Landscape is located in Levittown, New York.<br>
+				You can fill out a form here or contact us via e-mail or phone.</p>
+			<p><strong>Contact Information:</strong><br>
+				Phone: 516-555-5555<br>
+				E-mail: totalandscape@yahoo.com</p>
+		
+		</div>
+		<div id="sidebarform">
+			<form action="contact.php" method="post">
+    			Your name<br>
+    			<input type="text" name="cf_name"><br>
+    			Your phone number<br>
+    			<input type="text" name="cf_phone"><br>
+    			Your e-mail<br>
+    			<input type="text" name="cf_email"><br>
+    			Message<br>
+    			<textarea name="cf_message" cols="40" rows="5"></textarea><br>
+				<input type="submit" value="Send">
+				<input type="reset" value="Clear">
+			</form>
+		</div>
 
-$mail_status = mail($mail_to, $subject, $body_message, $headers);
+	</div>
+		
+		<!--<hr style="width:.25em; height: 15em; background: gray;"> -->		
+		
+		</div>
 
-if ($mail_status) { ?>
-	<script language="javascript" type="text/javascript">
-		alert('Thank you for the message. We will contact you shortly.');
-		window.location = 'contact_page.html';
-	</script>
-<?php
+		<div id="googleMap">
+		</div>
+		
+		<div id ="footer">
+			<div id="social">
+				<a href="http://www.facebook.com"><img src="facebook.gif"></a>
+				<a href="http://www.twitter.com"><img src="twitter.gif"></a>
+			</div>
+		<p>555-555-5555 | Totallandscape@yahoo.com</p>
+		
+		</div>
+
+		
+<script>function initialize()
+{
+var mapProp = {
+  center:new google.maps.LatLng(40.7244,73.5111),
+  zoom:5,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
-else { ?>
-	<script language="javascript" type="text/javascript">
-		alert('Message failed. Please, send an email to gordon@template-help.com');
-		window.location = 'contact_page.html';
-	</script>
-<?php
-}
-?>
+
+google.maps.event.addDomListener(window, 'load', initialize);</script>
+
+
+
+
+
+	</body>
+</html>
