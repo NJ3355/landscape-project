@@ -653,5 +653,38 @@ a:hover {
        #datePicker {
        	display: none;
        }
+       
+       #jobWrapper {
+       		clear:both;
+       }
 
+		#sidebarJobsLeft {
+			width:auto;
+			height:auto;
+			padding:1em;
+			border:none;
+		}
+		
+		.slider .sliderImage img {
+			width:100%;
+			display:block;
+		}
+		
+		.slider {
+			max-width:100%;
+		}
+		
+		.slider .sliderImage {
+			background-color:transparent;
+			height:auto;
+		}
+		
+		#sidebarJobsLeft p {
+			text-align:justify;
+		}
+		
+		#sidebarJobsRight {
+			width:auto;
+			float:none;
+		}
 }
