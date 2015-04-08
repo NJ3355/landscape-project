@@ -61,7 +61,7 @@ body {
 	display: inline;
 	margin-top: -10px;
 	list-style-type: none;
-	padding: 0 75px;
+	padding: 0 73px;
 	font-family: arial;
 	
 	color: white;
@@ -594,10 +594,25 @@ a:hover {
        
 }
 
+@media screen and (max-width:937px) {
+       #navlinks li {
+       	padding:0px 20px;
+              
+       }
+
+       #sidebarleft{
+       	display: none;
+       }
+
+
+     
+       
+}
+
 
 @media screen and (max-width:740px) {
        #navlinks li {
-       	padding:0px 20px;
+       	padding:0px 18px;
               
        }
 
@@ -607,7 +622,7 @@ a:hover {
 
 @media screen and (max-width:620px) {
        #navlinks li {
-       	padding:0px 10px;
+       	padding:0px 9px;
               
        }
 
@@ -622,8 +637,21 @@ a:hover {
        #logo {
 
        }
+
         #phone h3{
        	display:none;
+       }
+
+       #sidebarright {
+       	display: none;
+       }
+
+       #sidebarleft {
+       	display: inline;
+       }
+
+       #datePicker {
+       	display: none;
        }
 
 }
