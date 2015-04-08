@@ -367,7 +367,7 @@ body {
 }
 
 .sliderImage {
-  background-color:yellow;
+  
   height:246px;
   margin-left: 35px;
   margin-right: 35px;
@@ -584,6 +584,7 @@ a:hover {
 	Responsiveness
 ****************************/
 
+/**HEADER**/
 
 @media screen and (max-width:1060px) {
        #navlinks li {
@@ -627,6 +628,7 @@ a:hover {
        }
 
 
+/**INDEX PAGE**/
 
 @media screen and (max-width:552px) {
        #navlinks li {
@@ -642,6 +644,8 @@ a:hover {
        	display:none;
        }
 
+/**INDEX PAGE**/
+
        #sidebarright {
        	display: none;
        }
@@ -654,4 +658,46 @@ a:hover {
        	display: none;
        }
 
+ /**SERVICE PAGE**/
+
+ 	#sidenavbar {
+ 		
+ 		width:100%;
+ 	}
+
+ 	#sidenavbar ul {
+ 		margin: 0px auto;
+ 	}
+
+ 	#jobWrapper {
+ 		clear: both;
+ 	}
+
+ 	#sidebarJobsLeft {
+ 		display: none;
+ 	}
+
+
+
+ /**TESTIMONIAL PAGE**/
+
+
+ #sidebarform {
+ 	clear: both;
+ 	float:none;
+ 	border-left: none;
+ 	border-top: 5px solid;
+ 	margin: auto;
+ 	width: 100%;
+ }
+
+#sidebarinfo {
+	float: none;
+	margin: auto;
 }
+
+}
+
+
+
+
