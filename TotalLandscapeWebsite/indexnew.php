@@ -9,7 +9,7 @@
 				<h2>About us:</h2>
 				<p>Oasis Landscapes and Irrigation provides residential landscaping and commercial landscaping services in Atlanta and the surrounding metro area. We can improve your outdoor living areas, from outdoor kitchen designs to distinctive landscape design. Our Landscape Architects design and install custom landscapes, irrigation systems, ponds and water features, outdoor kitchens, retaining walls, hardscapes and outdoor lighting. Additionally, Oasis has a full range of lawn maintenance and irrigation system service programs available.</p>
 				
-				<a href="contact.html"><!-- moved contact button into the sidebar container -->
+				<a href="contact.php"><!-- moved contact button into the sidebar container -->
 					<div id="bottomleft">
 						<h2>Get a Quote!</h2>
 					</div>
@@ -25,19 +25,19 @@
 				<div id="sprinkler" class="third">
 					<h3>Sprinklers</h3>
 					<div class="image-container">
-						<a href="sprinkler.html"><img src="sprinkler.jpg"></a>
+						<a href="sprinkler.php"><img src="sprinkler.jpg"></a>
 					</div>
 				</div>
 				<div id="planting" class="third">
 					<h3>Plantings</h3>
 					<div class="image-container">
-						<a href="plantings.html"><img src="planting.jpg"></a>
+						<a href="plantings.php"><img src="planting.jpg"></a>
 					</div>
 				</div>
 				<div id="lawncare" class="third">
 					<h3>Lawn Care</h3>
 					<div class="image-container">
-						<a href="lawncare.html"><img src="lawn.jpg"></a>
+						<a href="lawncare.php"><img src="lawn.jpg"></a>
 					</div>
 				</div>
 
@@ -52,7 +52,7 @@
 				<div id="bottomright">
 					<img src="review.png">
 					<img src="review.png">
-					<a href="testimonials.html"><p>Click here for more indepth reviews on our testimonial page!</p></a>
+					<a href="testimonials.php"><p>Click here for more indepth reviews on our testimonial page!</p></a>
 				</div>
 			</div>
 		</div>

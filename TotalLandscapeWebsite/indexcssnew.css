@@ -62,7 +62,6 @@ body {
 	margin-top: -10px;
 	list-style-type: none;
 	padding: 0 75px;
-	padding-top: 40px;
 	font-family: arial;
 	
 	color: white;
@@ -73,7 +72,7 @@ body {
 }
 
 #phone{
-	background-color: black;
+	
 	position:relative;
 }
 
@@ -286,6 +285,7 @@ body {
 #bottomright p {
 	color: black;
 	font-weight: bold;
+
 }
 
 #bottomright a {
@@ -296,19 +296,22 @@ body {
 /****************************
 	Testimonials Page
 ****************************/
-#reviews {
+#reviewsTest {
 	width:100%;
 	background-image: url("bg.jpg") ;
 	background-repeat:no-repeat;
 	overflow: hidden;
 }
 
-#reviews h2, p {
+#reviewsTest h2, p {
 	text-align: center;
 	font-family: "arial";
+	
+
+
 }
 
-#reviews hr {
+#reviewsTest hr {
 	width: 50%;
 }
 
@@ -575,4 +578,52 @@ a:hover {
 
 #sidenavbar a:hover { 
     font-weight: bold;
+}
+
+/****************************
+	Responsiveness
+****************************/
+
+
+@media screen and (max-width:1060px) {
+       #navlinks li {
+       	padding:0px 35px;
+               
+       }
+
+       
+}
+
+
+@media screen and (max-width:740px) {
+       #navlinks li {
+       	padding:0px 20px;
+              
+       }
+
+     
+       
+}
+
+@media screen and (max-width:620px) {
+       #navlinks li {
+       	padding:0px 10px;
+              
+       }
+
+
+
+@media screen and (max-width:552px) {
+       #navlinks li {
+               display:block;
+               padding:2px;
+       }
+
+       #logo {
+
+       }
+        #phone h3{
+       	display:none;
+       }
+
 }

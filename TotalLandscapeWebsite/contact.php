@@ -18,7 +18,7 @@
 		
 		</div>
 		<div id="sidebarform">
-			<form action="contact.php" method="post">
+			<form action="contactForm.php" method="post">
     			Your name<br>
     			<input type="text" name="cf_name"><br>
     			Your phone number<br>
@@ -54,8 +54,8 @@
 <script>function initialize()
 {
 var mapProp = {
-  center:new google.maps.LatLng(40.7244,73.5111),
-  zoom:5,
+  center:new google.maps.LatLng(40.7259300 ,-73.5142900),
+  zoom:15,
   mapTypeId:google.maps.MapTypeId.ROADMAP
   };
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
