@@ -13,7 +13,12 @@
 			<h2>Services</h2>
 		<div id="sidebarJobsLeft">
 
-			<p>Landscape comprises the visible features of an area of land, including<br> the physical elements of landforms such as (ice-capped) mountains,<br> hills, water bodies such as rivers, lakes, ponds and the sea, living<br> elements of land cover including indigenous vegetation, human elements<br> including different forms of land use, buildings and structures, and<br>transitory elements such as lighting and weather conditions.</p>
+			<p>Landscape comprises the visible features of an area of land, including<br>
+			 the physical elements of landforms such as (ice-capped) mountains,<br> 
+			 hills, water bodies such as rivers, lakes, ponds and the sea, living<br> 
+			 elements of land cover including indigenous vegetation, human elements<br> 
+			 including different forms of land use, buildings and structures, and<br>
+			 transitory elements such as lighting and weather conditions.</p>
 		
 		</div>
 		<div id="sidebarJobsRight">
