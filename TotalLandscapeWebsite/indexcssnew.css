@@ -663,6 +663,7 @@ a:hover {
 			height:auto;
 			padding:1em;
 			border:none;
+			float:none;
 		}
 		
 		.slider .sliderImage img {
