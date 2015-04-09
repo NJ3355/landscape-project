@@ -674,9 +674,36 @@ a:hover {
  	}
 
  	#sidebarJobsLeft {
- 		display: none ;
+ 		width: auto;
+ 		height: auto;
+ 		padding: 1em;
+ 		border: none;
+ 		float: none;
  	}
 
+ 	#sidebarJobsLeft p {
+ 		text-align: justify;
+ 	}
+
+ 	#sidebarJobsRight {
+ 		width: auto;
+ 		float: none;
+ 	}
+
+ 	.slider .sliderImage img {
+ 		width: 100%;
+ 		display: block;
+ 	}
+
+
+ 	.slider {
+ 		max-width: 100%;
+ 	}
+
+ 	.slider .sliderImage {
+ 		background-color: transparent;
+ 		height: auto;
+ 	}
 
 
  /**CONTACT PAGE**/
