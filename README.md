@@ -3,6 +3,8 @@ landscape-project
 
 Landscape Company site
 
+I used WAMP to run everything correctly
+
 =================
 About me:
 
