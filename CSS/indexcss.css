@@ -6,6 +6,7 @@
 
 body {
 	background-color: #D0D0D0;
+	font-family: 'Noto Serif', serif;
 
 }
 
@@ -45,16 +46,11 @@ body {
 #navlinks  {	
 	width: 100%;
 	text-align: center;
-	margin-right: auto;
-	margin-left: auto;
-	padding-top: 25px;
-	padding-bottom: 20px;
-}
-
-#navlinks   {
 	padding: 0;
 	display: inline;
 }
+
+
 
 #navlinks  li {
 	
@@ -62,7 +58,7 @@ body {
 	margin-top: -10px;
 	list-style-type: none;
 	padding: 0 73px;
-	font-family: arial;
+	
 	
 	color: white;
 }
@@ -104,10 +100,7 @@ body {
 	Home page styles
 *******************************/
 #content {
-	/* don't set predefined dimensions on content, this container should always expand freely
-	height: 600px;
-	width:100%;
-	*/
+	
 	min-height:600px; /* min-height will expand as needed*/
 	
 	background-image: url("bg.jpg") ;
@@ -124,24 +117,24 @@ body {
 	width:400px;
 	
 	padding:25px 75px;
-	position:relative; /* in this case position isn't really needed, im just including it to demonstrate that it can be used to reset the coordinate system for position:absolute. i correctly absolutely position the "get a quote button" thanks to this */
-	padding-bottom:150px; /* i need to include this to give space for the "get a quote" button im absolutely positioning, absolutely positioned elements take up no space. normally i wouldn't use position:absolute for the button but i am here for info */
+	position:relative; 
+	padding-bottom:150px; 
 	overflow: hidden;
-	float:left; /* float it left so our content (unfloated) takes up the remaining space to the right */
+	float:left; 
 }
 
 #sidebarleft h2 {
 	text-align:center;
-	font-family: Arial, Helvetica, sans-serif;
+	
 }
 
 #sidebarleft p {
 	
-	font-family: Arial, Helvetica, sans-serif;
+	
 }
 
 #sidebarright {
-	/* if you don't float the adjacent div the remainder of the space will be used, hence no width or float being defined here */
+
 	overflow:hidden; /* need to set this so our .third gets properly split into thirds and our "top services" title is properly centered on the images */
 	padding:25px 75px 25px 25px; /* im leaving off the left side's padding by 50px because my .third class will be adding the space itself */
 
@@ -168,17 +161,17 @@ body {
 	left:0;
 }
 
-#sidebarright .image-container { /* this is some ninja css from http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/ */
+#sidebarright .image-container { 
 	overflow:hidden;
 	border:3px solid white;
 	position:relative;
 	width:100%;
-	padding-bottom:80%; /* this is part of the ninja css */
+	padding-bottom:80%; 
 }
 
 #sidebarright .third {
 	width:33.3%;
-	position:relative; /* again using this to reset our coordinate system for absolute placement of stuff inside this element */
+	position:relative; 
 	float:left;
 	padding-left:50px;
 }
@@ -278,7 +271,7 @@ body {
 }
 
 #bottomright img {
-	margin-right: 10px;
+	width:390px;
 
 }
 
@@ -305,7 +298,7 @@ body {
 
 #reviewsTest h2, p {
 	text-align: center;
-	font-family: "arial";
+	
 	
 
 
@@ -409,7 +402,7 @@ body {
 }
 
 #jobscontent h2 {
-	font-family: arial;
+	
 	text-align: center;
 	color:green;
 }
@@ -473,7 +466,7 @@ body {
 	height: 225px;
 	 width: 50%;
    float: left;
-	font-family: arial;
+	
 	border-right-style: solid;
 
 }
@@ -524,7 +517,7 @@ body {
 	
 	padding-top: 15px;
 	text-align: center;
-	font-family: arial;
+	
 	margin-right: -15px;
 }
 
@@ -566,13 +559,13 @@ body {
 
 
 a:hover { 
-    font-weight: bold;
+    color:black;
 }
 
 
 #sidenavbar a {
 	text-decoration: none;
-	font-family: arial;
+	
 	color:black;
 }
 

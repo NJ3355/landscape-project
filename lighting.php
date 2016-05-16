@@ -1,7 +1,7 @@
 <!doctype html> <!-- remember to define doctype so the page renders more consistently -->
 <?php include "header.php"; ?>
 		<link rel="stylesheet" type="text/css" href="font-awesome-4.3.0/css/font-awesome.min.css">
-		<script type="text/javascript" src="slider.js"></script>
+		<script type="text/javascript" src="javascript/slider.js"></script>
 
 
 		<div id="jobscontent">

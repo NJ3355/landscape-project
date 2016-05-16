@@ -3,9 +3,9 @@
        <head>
                <title><?php echo isset($title) ? $title : "Total Landscape"; ?></title>
                
-               <link rel="stylesheet" type="text/css" href="indexcssnew.css">
+               <link rel="stylesheet" type="text/css" href="CSS/indexcss.css">
                <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/le-frog/jquery-ui.css" type="text/css" media="all" />
-               
+               <link href='https://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
                <script type="text/javascript" src="slideshowfile.js"></script>
                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
                <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.min.js" type="text/javascript"></script>
@@ -25,22 +25,22 @@
                        </div>
                        <div id="navbar">
                                <div id="logo">
-                                       <img src="logo.jpg">
+                                       <img src="images/logo.jpg">
                                </div>
                                
                                <div id="navlinks">
                                        <ul>
-                                               <li><a href="indexnew.php"><img src="leaf2.png">Home</a></li>
-                                               <li><a href="testimonials.php"><img src="leaf2.png">Testimonials</a></li>
-                                               <li><a href="jobs.php"><img src="leaf2.png">Services</a></li>
+                                               <li><a href="index.php"><img src="images/leaf2.png">Home</a></li>
+                                               <li><a href="testimonials.php"><img src="images/leaf2.png">Testimonials</a></li>
+                                               <li><a href="jobs.php"><img src="images/leaf2.png">Services</a></li>
                                                        
-                                               <li><a href="contact.php"><img src="leaf2.png">Contact Us</a></li>
+                                               <li><a href="contact.php"><img src="images/leaf2.png">Contact Us</a></li>
                                        </ul>
                                </div>
                        </div>        
                </div>
                <div id="slideshow">
-                       <img name="slide" src="landheader.jpg">
+                       <img name="slide" src="images/landheader.jpg">
                </div>
      
  

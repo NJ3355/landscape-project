@@ -1,8 +1,8 @@
 var i = 0;
 var path = new Array();
  
-path[0] = "landheader.jpg";
-path[1] = "landheader2.jpg";
+path[0] = "images/landheader.jpg";
+path[1] = "images/images/landheader2.jpg";
 path[2] = "landheader3.jpg";
 
 function swapImage()
