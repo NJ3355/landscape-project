@@ -103,7 +103,7 @@ body {
 	
 	min-height:600px; /* min-height will expand as needed*/
 	
-	background-image: url("bg.jpg") ;
+	background-image: url("../images/bg.jpg") ;
 	background-repeat:no-repeat;
 	
 	overflow:hidden; /* http://colinaarts.com/articles/the-magic-of-overflow-hidden/ */
@@ -267,7 +267,7 @@ body {
 	*/
 	clear:both; /* clear our #sidebarleft float so the box doesnt fit inside the remaining space not taken up by #sidebaright */
 	padding:50px 0;
-	float:right;
+	text-align:center;
 }
 
 #bottomright img {
@@ -291,7 +291,7 @@ body {
 ****************************/
 #reviewsTest {
 	width:100%;
-	background-image: url("bg.jpg") ;
+	background-image: url("../images/bg.jpg") ;
 	background-repeat:no-repeat;
 	overflow: hidden;
 }
@@ -333,7 +333,7 @@ body {
 #contentcontact {
 	
 	width:100%;
-	background-image: url("bg.jpg") ;
+	background-image: url("../images/bg.jpg") ;
 	background-repeat:no-repeat;
 	overflow: hidden;
 }
@@ -396,7 +396,7 @@ body {
 
 #jobscontent {
 	width:100%;
-	background-image: url("bg.jpg") ;
+	background-image: url("../images/bg.jpg") ;
 	background-repeat:no-repeat;
 	overflow: hidden;
 }
