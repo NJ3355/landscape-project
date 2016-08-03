@@ -36,9 +36,9 @@ var slider = function(target, slides) {
 };
 
 var mySlides = new Array();
-mySlides[0] = "landheader.jpg";
-mySlides[1] = "landheader2.jpg";
-mySlides[2] = "landheader3.jpg";
+mySlides[0] = "images/landheader.jpg";
+mySlides[1] = "images/landheader2.jpg";
+mySlides[2] = "images/landheader3.jpg";
 
 
 

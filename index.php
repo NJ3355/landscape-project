@@ -25,19 +25,19 @@
 				<div id="sprinkler" class="third">
 					<h3>Sprinklers</h3>
 					<div class="image-container">
-						<a href="sprinkler.php"><img src="sprinkler.jpg"></a>
+						<a href="sprinkler.php"><img src="images/sprinkler.jpg"></a>
 					</div>
 				</div>
 				<div id="planting" class="third">
 					<h3>Plantings</h3>
 					<div class="image-container">
-						<a href="plantings.php"><img src="planting.jpg"></a>
+						<a href="plantings.php"><img src="images/planting.jpg"></a>
 					</div>
 				</div>
 				<div id="lawncare" class="third">
 					<h3>Lawn Care</h3>
 					<div class="image-container">
-						<a href="lawncare.php"><img src="lawn.jpg"></a>
+						<a href="lawncare.php"><img src="images/lawn.jpg"></a>
 					</div>
 				</div>
 
@@ -50,8 +50,8 @@
 			</div>
 				
 				<div id="bottomright">
-					<img src="review.png">
-					<img src="review.png">
+					<img src="images/review.png">
+					<img src="images/review.png">
 					<a href="testimonials.php"><p>Click here for more indepth reviews on our testimonial page!</p></a>
 				</div>
 			</div>

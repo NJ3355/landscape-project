@@ -3,11 +3,12 @@ landscape-project
 
 Landscape Company site
 
-I used WAMP to run everything correctly
+Tools: HTML, CSS, JavaScript, jQuery and PHP.
+WAMP setting.
+
+Link: http://totallandscape.teammeet.x10host.com/TotalLandscapeWebsite/
+
+Additional Information: I was bored and decided to create a mock website of a landscape company. All the images and text are just placeholders. This was one of the first sites I created.
 
 =================
-About me:
 
-Senior in college majoring in Computer Science aiming to become a front-end web dev. Also, this is my first time using github so I am still learning it.
-
-This is a site I am making for a friends lanscaping company to gain experience and to use for my portfolio.
